@@ -1,0 +1,22 @@
+{
+  "name": "javascript-unit-test",
+  "version": "1.0.0",
+  "description": "Example how to do JavaScript/Node unit testing with coverage ",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc mocha && nyc check-coverage --lines 80 --functions 40 --branches 40",
+    "test-coverage-fail": "nyc mocha && nyc check-coverage --lines 80 --functions 40 --branches 100"
+  },
+  "keywords": [
+    "javascript",
+    "unit",
+    "test",
+    "coverage"
+  ],
+  "author": "Hylke Stapersma",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^4.0.1",
+    "nyc": "^11.2.1"
+  }
+}
